@@ -1,6 +1,7 @@
 <script setup>
 import { ref } from "vue";
 
+const flag = ref(false);
 const response = ref({});
 
 // adding delay
@@ -32,8 +33,11 @@ try {
     </video>
 
     <div class="desc">
-      <button><h4>Extra info</h4></button>
-      <p>{{ res.year }}</p>
+      <button @click="flag=!flag"><h4>Extra info</h4></button>
+      <p v-show="flag">Year of release: {{ res.year }}</p>
+      <p v-show="flag">Character: {{ res.character }}</p>
+      <p v-show="flag">Line: {{ res.full_line }}</p>
+      <p v-show="flag">Total wow count: {{ res.total_wows_in_movie }}</p>
     </div>
   </div>
 </template>

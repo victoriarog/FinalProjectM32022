@@ -73,5 +73,16 @@ button {
   background-color: transparent;
   border: none;
   font-family: "Josefin Sans", sans-serif;
-  font-size: 3vh;
+  font-size: 4vh;
+  padding: 0;
+}
+
+.desc {
+  float: right;
+  width: 27vw;
+}
+
+p {
+  font-size: 2.8vh;
+  margin: 0;
 }
