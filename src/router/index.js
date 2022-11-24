@@ -1,20 +1,25 @@
-import { createRouter, createWebHistory } from "vue-router";
-import HomeView from "../views/HomeView.vue";
+import { createRouter, createWebHistory } from 'vue-router';
+
+// Async loading of Views
+const Landing = () => import('@/views/Landing.vue');
+const About = () => import('@/views/About.vue');
+
+const routes = [
+  {
+    path: '/',
+    name: 'Landing',
+    component: Landing,
+  },
+  {
+    path: '/about',
+    name: 'About',
+    component: About,
+  },
+];
 
 const router = createRouter({
-  history: createWebHistory(import.meta.env.BASE_URL),
-  routes: [
-    {
-      path: "/",
-      name: "home",
-      component: HomeView,
-    },
-    {
-      path: "/about",
-      name: "about",
-      component: () => import("../views/AboutView.vue"),
-    },
-  ],
+  history: createWebHistory(),
+  routes,
 });
 
 export default router;

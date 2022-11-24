@@ -10,6 +10,22 @@ body {
     background-color: #d6ccc2;
 }
 
+img {
+  width: 430px;
+  height: auto;
+  padding: 2vh 2vw;
+}
+
+header {
+  font-size: 3.5vh;
+  padding: 2vh 0 0 17vw;
+}
+
+.plain-link {
+  text-decoration: none;
+  color: white;
+}
+
 body {
   background-image: url("owenface.png");
   background-size: 150px;
