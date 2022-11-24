@@ -102,3 +102,8 @@ p {
   font-size: 2.8vh;
   margin: 0;
 }
+
+.dirs {
+  font-size: 2.7vh;
+  padding: 2vh 0 1vh 5vw ;
+}
