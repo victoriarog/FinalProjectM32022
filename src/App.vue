@@ -1,6 +1,6 @@
 <script setup>
 import { RouterLink, RouterView } from "vue-router";
-import Owen from "./Owen.vue";
+import Owen from "./components/Owen.vue";
 </script>
 
 <template>
