@@ -33,7 +33,7 @@ try {
     </video>
 
     <div class="desc">
-      <button @click="flag=!flag"><h4>Extra info</h4></button>
+      <button @click="flag = !flag"><h4>Extra info</h4></button>
       <p v-show="flag">Year of release: {{ res.year }}</p>
       <p v-show="flag">Character: {{ res.character }}</p>
       <p v-show="flag">Line: {{ res.full_line }}</p>

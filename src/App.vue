@@ -30,4 +30,3 @@ import Owen from "./Owen.vue";
     </Suspense>
   </div>
 </template>
-
