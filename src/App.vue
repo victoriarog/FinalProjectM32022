@@ -8,4 +8,3 @@
     <router-view />
   </main>
 </template>
-

@@ -25,7 +25,7 @@ try {
 </script>
 
 <template>
-    <div v-for="res in response" class="dirs">
-      <p>{{ res }}</p>
-    </div>
+  <div v-for="res in response" class="dirs">
+    <p>{{ res }}</p>
+  </div>
 </template>

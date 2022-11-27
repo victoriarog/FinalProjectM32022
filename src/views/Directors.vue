@@ -8,7 +8,7 @@ import WowSearch from "../components/WowSearch.vue";
     <h2>See all the legendary Wows</h2>
   </div>
   <div class="page-wrapper">
-    <h2 class="h2t">Directors: </h2>
+    <h2 class="h2t">Directors:</h2>
     <Suspense>
       <WowSearch />
     </Suspense>
