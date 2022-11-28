@@ -2,6 +2,7 @@
 import { ref } from "vue";
 
 const response = ref({});
+const directorChosen = ref('');
 
 // adding delay
 await new Promise((resolve) => {
@@ -25,7 +26,18 @@ try {
 </script>
 
 <template>
-  <div v-for="res in response" class="dirs">
+  <!-- <div v-for="res in response" class="dirs">
     <p>{{ res }}</p>
+  </div> -->
+
+  <div class="dirs">
+    <select v-model="directorChosen">
+      <option disabled value="">wow choose here</option>
+      <option v-for="res in response">
+        {{ res }}
+      </option>
+    </select>
+    <p>{{directorChosen}}</p>
   </div>
+
 </template>
